@@ -1,0 +1,360 @@
+.hero{
+    background: url('../img/hero-bg.jpg') center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.hero:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.hero .container .row{
+    top: 40%;
+}
+.col-md-10{
+    animation: zoom-in 1.5s ease-in-out;
+}
+.content .spa1{
+    letter-spacing: .3rem;
+}
+.content .spa2{
+    letter-spacing: .1rem;
+}
+.btns a{
+    padding: 8px 25px;
+}
+.btns{
+    animation: zoom-in 2s ease-in-out;
+}
+.btns a:hover{
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}
+
+@keyframes zoom-in{
+    0% {transform: scale(.6);
+        opacity: 0;
+    }
+    70% {transform: scale(1.05)}
+    100% {transform: scale(1)}
+}
+.navbar-nav li{
+    padding-left: 1.5rem;
+}
+
+.about{
+    background: url(/machhapuchhre/img/about-bg.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+}
+.about:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.about .img-container img{
+    max-width: 100%;
+    border: 4px solid rgba(255, 255,255,0.2);
+}
+.about .img-container::before{
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    border-left: 5px solid #cda45e;
+    border-top: 5px solid #cda45e;
+    transition: 0.5s;
+}
+.about .img-container::after{
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    border-right: 5px solid #cda45e;
+    border-bottom: 5px solid #cda45e;
+    transition: 0.5s;
+}
+.about .img-container:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+.about .img-container{
+    transition: 0.5s;
+    animation: zoom-in 1.5s ease-in-out;
+
+}
+.about .img-container:hover::before {
+    left: 10px;
+    top: 10px;
+}
+.about .img-container:hover::after{
+    right: 10px;
+    bottom: 10px;
+}
+
+h6::after{
+    content: "";
+    border-top: 1px solid rgba(255, 255, 255, 0.2) ;
+    width: 120px;
+    display: inline-block;
+    margin: 4px 10px;
+}
+.us .col-md-4 .card{
+    background-color: #1a1814;
+}
+
+.card-body h1{
+    color:#cda45e;
+}
+.card:hover h1{
+    color: white;
+    transform: translateY(-10px);
+}
+
+
+
+
+.us .col-md-4 .card:hover{
+    cursor: pointer;
+    background-color: #cda45e;
+    color: white;
+}
+.menu a{
+    color: #FFF;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Playfair Display", serif;
+}
+.menu a:hover{
+    color: #cda45e;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-item img{
+    width: 70px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    float: left;
+}
+.menu-item .content{
+    position: relative;
+    overflow: hidden;
+}
+.menu-item .content::after{
+    position: absolute;
+    content: "......................................................................" "...................................................................." "....................................................................";
+    left: 7rem;
+    right: 0;
+    top: 4px;
+    z-index: 1;
+    color: #bab3a6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu-item .content a{
+    position: relative;
+    z-index: 3;
+    background-color: #1a1814;
+    padding-right: 10px;
+    position: relative;
+}
+.menu-item .content span{
+    position: relative;
+    z-index: 3;
+    background-color: #1a1814;
+    font-weight: 600;
+}
+.special-content ul li a{
+    color: #fff;
+    font-weight: 600; 
+    font-size: large;  
+    margin: 0.4rem 0;
+    text-transform: capitalize;
+    font-family: "Playfair Display", serif;
+}
+.special-content ul li:hover{
+    background: #cda45e;
+    color: #1a1814;
+    padding-right: 0;
+}
+
+.events{
+    background: url(../img/events-bg.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    // height: 100vh;
+    position: relative;
+}
+.events::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.form .container input,
+.form .container textarea{
+    background: transparent;
+    border-radius: 0%;
+    border-color: #cda45e;
+    font-size: 14px;
+    box-shadow: none;
+    border: 1px solid #625b4b;
+    color: whitesmoke;
+}
+.form .container input:focus,
+.form .container textarea:focus{
+    border-color: #cda45e;
+}
+.form .container input::placeholder,
+.form .container textarea::placeholder{
+    color: #625b4b;
+}
+.carousel-inner .carousel-item .card .row .col-md-4 .card{
+    background: #26231d;
+    color: #fff;
+    border: none;
+    margin: auto;
+    max-width: 300px;
+    min-height: 180px;
+}
+
+.carousel-item{
+    box-sizing: content-box;
+    min-height: 390px;
+}
+.carousel-inner .carousel-item .card .row .col-md-4 img{
+    width: 90px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    z-index: 2;
+    position: relative;
+}
+.carousel-inner .carousel-item .card .row .col-md-4 .img-container{
+    position: absolute;
+    content: "";
+    left: 3rem;
+    bottom: -7rem;
+}
+.carousel-control-prev{
+    position: absolute;
+    content: "";
+    left: -3rem;
+}
+.carousel-control-next{
+    position: absolute;
+    content: "";
+    right: -3rem;
+}
+
+.lightbox img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+.col-md-3{
+    overflow: hidden;
+}
+
+
+
+
+.chefs .member{
+    color: #fff;
+    text-align: center;
+    background: hsl(210, 10%, 23%);
+    position: relative;
+    overflow: hidden;
+}
+
+.chefs .member .member-info{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.chefs .member .member-info .contact{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    opacity: 0;
+}
+.chefs .member .member-info .social{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 48px;
+    bottom: -38px;
+    text-align: center;
+    opacity: 0;
+}
+.chefs .member:hover .member-info{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+    opacity: 1;
+}
+.chefs .member:hover .contact{
+    bottom: 60px;
+    transition: all 0.5s ease-in;
+    opacity: 1;
+}
+.chefs .member:hover .social{
+    bottom: 0;
+    transition: all 0.6s ease-in;
+    opacity: 1;
+}
+.form .info  i{
+    float: left;
+    background: #cda45e;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.form .info h4{
+    padding: 0 0 0 60px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-family: "poppins",sans-serif;
+}
+.form .info  p{
+    padding: 0 0 0 60px;
+    font-size: 14px;
+    color: #bab3a6;
+}
+.btn-group input{
+    border-radius: 0;
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+.btn-group button{
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+    z-index: 1;
+}

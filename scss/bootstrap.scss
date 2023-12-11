@@ -1,0 +1,71 @@
+$primary: #cda45e;
+$light: #d9ba85;
+$dark: #444444;
+$secondary: rgba(12, 11, 9, 0.2);
+$info: #1a1814;
+$text-color: #312f2f;
+$background-color: white;
+
+$font-family-sans-serif: "Open Sans", sans-serif;
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "playfair Display", serif;
+    }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 8,
+) !default;
+
+$navbar-nav-link-padding-X: 0.8rem;
+$navbar-padding-Y: 1rem;
+$navbar-link-font-weight: 700;
+
+$navbar-toggler-border-radius: 5px;
+
+$heading-margin-bottom: $spacer * 1 !default;
+$line-height-base: 1.4;
+$headings-font-weight: bold;
+
+
+$button-radius: 50px;
+$button-padding-X: 40px;
+$button-padding-Y: 1px;
+
+$btn-border-radius: $button-radius;
+$btn-border-radius-sm: $button-radius;
+$btn-border-radius-lg: $button-radius;
+$btn-border-padding-X: $button-padding-X;
+$btn-border-padding-X-sm: $button-padding-X;
+$btn-border-padding-X-lg: $button-padding-Y;
+$btn-border-padding-Y: $button-padding-Y;
+$btn-border-padding-Y-sm: $button-padding-Y;
+$btn-border-padding-Y-lg: $button-padding-Y;
+
+
+$input-radius: 30px;
+$input-btn-padding-y: 0.7rem;
+$input-btn-padding-x: 1rem;
+$input-border-radius: $input-radius;
+$input-border-radius-sm: $input-radius;
+$input-border-radius-lg: $input-radius;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
